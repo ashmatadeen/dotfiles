@@ -12,3 +12,5 @@ PATH=$PATH:$HOME/bin
 export PATH
 alias nano='vim'
 
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
