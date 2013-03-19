@@ -7,3 +7,8 @@ fi
 
 # User specific aliases and functions
 alias ll='ls -lah'
+
+#PATH TO SBIN
+PATH=$PATH":/usr/sbin"
+export PATH
+
