@@ -1,7 +1,7 @@
 syntax enable "syntax highlighting
 set background=dark
 set t_Co=256
-colorscheme aqua 
+colorscheme Tomorrow-Night-Eighties 
 set number "line numbers
 set encoding=utf8
 set tabstop=4
