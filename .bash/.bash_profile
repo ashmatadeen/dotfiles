@@ -10,6 +10,9 @@ fi
 PATH=$PATH:$HOME/bin
 
 export PATH
+
+export PATH=$PATH:/usr/local/sbin
+
 alias nano='vim'
 
 export CLICOLOR=1
