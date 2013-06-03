@@ -11,6 +11,6 @@ set smartcase "Case insensitive search
 set novisualbell 
 filetype indent on
 set listchars=tab:▸\ ,eol:¬
-inoremap jk <ESC>
 cnoremap w!! w !sudo tee % >/dev/null 
 set noswapfile
+nnoremap ,p :se paste!<cr>
