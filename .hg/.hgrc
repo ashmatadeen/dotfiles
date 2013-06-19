@@ -1,5 +1,6 @@
 [extensions]
 color =
+pager =
 hgext.graphlog =
 [color]
 status.modified = blue bold underline red_background
@@ -20,6 +21,8 @@ status.removed = red bold
 status.deleted = cyan bold
 status.unknown = blue bold
 status.ignored = black bold
+[pager]
+pager = LESS='FrSXQ' less
 [merge-tools]
 vimdiff.executable = vim
 vimdiff.args = -d $base $local $output $other +close +close
