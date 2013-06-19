@@ -12,6 +12,8 @@ PATH=$PATH:$HOME/bin
 export PATH
 
 export PATH=$PATH:/usr/local/sbin
+export PATH=/usr/local/php5/bin:$PATH
+
 
 alias nano='vim'
 
