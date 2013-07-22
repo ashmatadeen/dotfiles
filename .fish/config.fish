@@ -1,3 +1,7 @@
+function ll
+	ls -lah
+end
+
 function fish_prompt
     set_color $fish_color_cwd
     printf '%s' (prompt_pwd)
@@ -6,7 +10,6 @@ function fish_prompt
     hg_prompt
 	echo ' > '
 end
-
 
 function git_prompt
     if git root >/dev/null 2>&1
