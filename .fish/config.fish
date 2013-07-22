@@ -27,6 +27,8 @@ function hg_prompt
         printf ' on '
         set_color magenta
         printf '%s' (hg branch ^/dev/null)
+		printf '-'
+		printf '%s' (hg parent --template "{rev}" ^/dev/null)
         set_color normal
     end
 end
