@@ -2,6 +2,13 @@
 color =
 pager =
 hgext.graphlog =
+# ksdiff
+hgext.extdiff =
+
+[extdiff]
+cmd.ksdiff = /usr/local/bin/ksdiff
+opts.ksdiff = --changeset --wait --filelist
+
 [color]
 status.modified = blue bold underline red_background
 status.added = green bold
@@ -9,11 +16,21 @@ status.removed = red bold blue_background
 status.deleted = cyan bold underline
 status.unknown = magenta bold underline
 status.ignored = black bold
+
 [ui]
-merge = vimdiff
+#merge = vimdiff
+# ksdiff
+merge = Kaleidoscope
+
 username = Ash Matadeen <ash@fatbeehive.com>
 editor = vim 
 verbose = true
+
+# ksdiff
+[merge-tools]
+Kaleidoscope.executable = /usr/local/bin/ksdiff
+Kaleidoscope.args = --merge --output $output --base $base -- $local $other
+
 [color]
 status.modified = magenta bold
 status.added = green bold
@@ -21,8 +38,10 @@ status.removed = red bold
 status.deleted = cyan bold
 status.unknown = blue bold
 status.ignored = black bold
+
 [pager]
 pager = LESS='FrSXQ' less
-[merge-tools]
-vimdiff.executable = vim
-vimdiff.args = -d $base $local $output $other +close +close
+
+#[merge-tools]
+#vimdiff.executable = vim
+#vimdiff.args = -d $base $local $output $other +close +close
