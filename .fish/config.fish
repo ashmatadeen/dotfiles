@@ -1,4 +1,5 @@
 set PATH /usr/local/php5/bin $PATH
+set PATH $PATH /usr/local/sbin
 
 function ll
 	ls -lah
