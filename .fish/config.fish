@@ -1,7 +1,8 @@
 set PATH /usr/local/php5/bin $PATH
-set NODE_PATH "/usr/local/lib/node_modules"
-set PATH "/usr/local/share/npm/bin" $PATH
-set PATH $PATH /usr/local/sbin
+set PATH /usr/local/sbin $PATH
+
+set PATH /usr/local/share/npm/bin $PATH
+set NODE_PATH /usr/local/lib/node_modules
 
 function ll
 	ls -lah
