@@ -21,6 +21,7 @@ status.ignored = black bold
 #merge = vimdiff
 # ksdiff
 merge = Kaleidoscope
+ssh = ssh -C
 
 username = Ash Matadeen <ash@fatbeehive.com>
 editor = vim 
