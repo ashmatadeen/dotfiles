@@ -18,11 +18,11 @@ function fish_prompt
 end
 
 function git_prompt
-    if git root >/dev/null 2>&1
+    if git rev-parse --show-toplevel >/dev/null 2>&1
         set_color normal
         printf ' on '
         set_color magenta
-        printf '%s' (git currentbranch ^/dev/null)
+        printf '%s' (git branch --contains HEAD | grep '*' | tr -s ' ' | cut -d ' ' -f2 ^/dev/null)
         set_color normal
     end
 end
