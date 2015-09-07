@@ -17,6 +17,11 @@ function fish_prompt
 	echo ' > '
 end
 
+function fish_greeting
+    archey -c
+    date
+end
+
 function git_prompt
     if git rev-parse --show-toplevel >/dev/null 2>&1
         set_color normal
