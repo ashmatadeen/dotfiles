@@ -29,6 +29,7 @@
 	currentbranch = !git branch --contains HEAD | grep '*' | tr -s ' ' | cut -d ' ' -f2
 	ci = commit
 	st = status
+	dt = difftool
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
