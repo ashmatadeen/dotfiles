@@ -44,5 +44,6 @@ pager = LESS='FrSXQ' less
 
 [alias]
 fbpush = push --ssh "ssh -i ~/.ssh/bitbucket_fb" 
+fbpull = pull --ssh "ssh -i ~/.ssh/bitbucket_fb" 
 fbin = in --ssh "ssh -i ~/.ssh/bitbucket_fb" 
 fbout = out --ssh "ssh -i ~/.ssh/bitbucket_fb" 
