@@ -3,7 +3,7 @@
 	user = Ash Matadeen
 	email = ash.matadeen@gmail.com
 	excludesfile = /Users/ash/.gitignore_global
-	editor = 'subl' --wait
+	editor = 'slime' --wait
 [user]
 	name = Ash Matadeen
 	email = ash.matadeen@gmail.com
